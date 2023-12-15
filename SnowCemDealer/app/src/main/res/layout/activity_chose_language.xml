@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Choose Language"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_height="100dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeEnglish"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rectangle_select"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="English"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imgEnglish"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_radio_button" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeHindi"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rectangle_unselect"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvHindi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="हिन्दी"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvHindi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvHindi"
+                        android:layout_marginLeft="10dp"
+                        android:text="Hindi"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imgHindi"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/iuc_radio_button_unselect"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="100dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeGujrati"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rectangle_unselect"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ગુજરાતી"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvGujrati"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gujrati"
+                        android:textSize="12sp"
+                        android:id="@+id/tvGujrati2"
+                        android:layout_below="@+id/tvGujrati"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgGujrat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/iuc_radio_button_unselect"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent">
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
