@@ -155,7 +155,7 @@ public class ActivityLogin extends AppCompatActivity implements OnKeyboardVisibi
             public void onClick(View view) {
                 Intent intent = new Intent(ActivityLogin.this, WebPageActivity.class);
                 intent.putExtra("from", "register");
-                intent.putExtra("url", ApiClient.WEB_BASE_URL + "customer-create");
+                intent.putExtra("url", ApiClient.WEB_BASE_URL + "customer-create"+"?customer_type=3");
                 intent.putExtra("title", "Registration");
                 startActivity(intent);
             }
